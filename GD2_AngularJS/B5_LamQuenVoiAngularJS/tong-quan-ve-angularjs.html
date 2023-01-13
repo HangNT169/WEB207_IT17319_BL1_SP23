@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <!-- ng-app: dung de dang ki file HTML nao duoc dung
+  sytax cua angular js -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Angular JS 
+    1. Gioi thieu
+    - La 1 javascript framework manh me duoc phat trien boi google giup 
+    - xay dung 1 ung dung web signle page hoan chinh
+    - Cac thanh phan cua angularjs
+        + databinding: Đó là cơ chế đồng bộ giữa model và view. 
+        Nếu thay đổi view => model thay đôi. 2 cái này tự động đồng bộ với nhau. 
+        => GỌi là two way bignding
+        + scope: Đây là đối tượng có khả năng truy cập các model.
+         Scope như là 1 chất keo giữa controller và view
+          => Giúp controller và view có thể liên kết với nhau
+        + controller: Là 1 chức năng JS được liên kết với view tương ứng
+        + services: là 1 dịch vụ viết có thể dùng chung được
+        + filter: bô loc
+        + diẻctives: Cho phép mở rộng HTML theo ý bạn có thể chinhe 
+        lại các thuộc tính, phần tử
+        + templates: là 1 file xây dựng html. Nó được gọi từ thông 
+        tin của controller và model. Templates có thể là 1 file giuống index.html.
+        + Routing: Khi làm signle page  k dùng routing của html 
+        => DÙng điều hướng qua các view k load lại trang
+        + MVC
+        + DI: Giảm thiệu sự  phụ thuộc giữa các modul 
+        => Giúp phát triển dễ dàng hơn
+        + Deep Linking
+
+    2. Ưu và nhược điểm 
+        + Được phát triẻn bởi gg
+        + Sử dụng cơ chế data-bigng 
+        + Vì phát triển từ js hoàn toàn nên k an toàn. Bảo mật yếu
+    3. Download và cài đặt
+    4. Cac thanh phan chinh cua angular js
+    - ng-app: la 1 direction chi dinh cho angular biet . 
+    Cac phan tu nam trong element con chua ng-app thi se danh dau
+     nhung phan tu duoc lam viec vs angular. THuong de torng bpdy hoac html
+    Khong duoc phep de ng-app o the khac ngoai body hoac html neu k se k an
+    - ng-model: De ket noi control vs ung dung angular js
+     -->
+    <div>10*20={{10*20}}</div>
+    10*20={{10*20}}
+    <input type="text" ng-model="number" />
+    <p>{{number}}</p>
+    <script src="../lib/angular.min.js"></script>
+  </body>
+</html>
