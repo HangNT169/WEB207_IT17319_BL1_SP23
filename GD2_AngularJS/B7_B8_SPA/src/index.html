@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-app="myModule">
+    <!-- Nhung layout : ng-include -->
+    <!-- <nav ng-include="'layout/header.html'"></nav> -->
+    <!-- Header -->
+    <header>
+      <li><a href="#home">Trang chủ11111</a></li>
+      <li><a href="#gioi-thieu">Giới thiệu</a></li>
+      <li><a href="#about/HangNT169">About</a></li>
+    </header>
+
+    <!-- Section: body -->
+    <!-- ng-view : Chua noi dung thay doi theo tung trang -->
+    <div ng-view></div>
+    <!-- Footer -->
+    <footer>Footer: HangNT169</footer>
+
+    <!-- <nav ng-include="'layout/footer.html'"></nav> -->
+    <script src="../lib/angular.js"></script>
+    <!-- Dung de chuyen trang SPA -->
+    <script src="../lib/angular-route.js"></script>
+    <script src="route.js"></script>
+  </body>
+</html>
