@@ -7,24 +7,20 @@
     <title>Document</title>
   </head>
   <body ng-app="myModule">
-    <!-- Nhung layout : ng-include -->
-    <!-- <nav ng-include="'layout/header.html'"></nav> -->
-    <!-- Header -->
-    <header>
-      <li><a href="#home">Trang chủ11111</a></li>
-      <li><a href="#gioi-thieu">Giới thiệu</a></li>
-      <li><a href="#about/HangNT169">About</a></li>
-    </header>
+    <!-- ng-include : Nhung 1 file HTML con 
+      vao file HTML cha -->
 
-    <!-- Section: body -->
-    <!-- ng-view : Chua noi dung thay doi theo tung trang -->
+    <nav ng-include="'layout/header.html'"></nav>
+    <!-- Section: Body -->
+    <!-- ng-view: Thay doi noi dung mong 
+      muon theo tung duong dan khac nhau -->
     <div ng-view></div>
-    <!-- Footer -->
-    <footer>Footer: HangNT169</footer>
-
     <!-- <nav ng-include="'layout/footer.html'"></nav> -->
+    <!-- Footer -->
+    <footer>Footer:HangNT169</footer>
+
     <script src="../lib/angular.js"></script>
-    <!-- Dung de chuyen trang SPA -->
+    <!-- angular-router.js hoac min de lam SPA -->
     <script src="../lib/angular-route.js"></script>
     <script src="route.js"></script>
   </body>
