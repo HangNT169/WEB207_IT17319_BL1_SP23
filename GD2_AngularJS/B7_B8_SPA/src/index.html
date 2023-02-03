@@ -9,12 +9,15 @@
   <body ng-app="myModule">
     <!-- ng-include : Nhung 1 file HTML con 
       vao file HTML cha -->
-
-    <nav ng-include="'layout/header.html'"></nav>
+    <header>
+      <nav ng-include="'layout/header.html'"></nav>
+    </header>
     <!-- Section: Body -->
     <!-- ng-view: Thay doi noi dung mong 
       muon theo tung duong dan khac nhau -->
-    <div ng-view></div>
+    <section ng-view></section>
+    <!-- <main ng-view></main> -->
+
     <!-- <nav ng-include="'layout/footer.html'"></nav> -->
     <!-- Footer -->
     <footer>Footer:HangNT169</footer>
@@ -22,6 +25,8 @@
     <script src="../lib/angular.js"></script>
     <!-- angular-router.js hoac min de lam SPA -->
     <script src="../lib/angular-route.js"></script>
+    <script src="./controller/thucvat/thuc-vat-controller.js"></script>
+    <script src="./controller/thucvat/hien-thi.js"></script>
     <script src="route.js"></script>
   </body>
 </html>

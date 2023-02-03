@@ -8,107 +8,110 @@ myApp.config(function ($routeProvider, $locationProvider) {
     .when("/trang-chu", {
       // lam gi thi lam
       // noi dung cua trang chu
-      template: `<section>
-            <h1>Noi dung trang chu</h1>
-            <h1>Noi dung trang chu</h1>
-            <h1>Noi dung trang chu</h1>
-            <h1>Noi dung trang chu</h1>
-            <h1>Noi dung trang chu</h1>
-        </section>
-        <table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table><table>
-<tr>
-  <th>Company</th>
-  <th>Contact</th>
-  <th>Country</th>
-</tr>
-<tr>
-  <td>Alfreds Futterkiste</td>
-  <td>Maria Anders</td>
-  <td>Germany</td>
-</tr>
-<tr>
-  <td>Centro comercial Moctezuma</td>
-  <td>Francisco Chang</td>
-  <td>Mexico</td>
-</tr>
-</table><table>
-<tr>
-  <th>Company</th>
-  <th>Contact</th>
-  <th>Country</th>
-</tr>
-<tr>
-  <td>Alfreds Futterkiste</td>
-  <td>Maria Anders</td>
-  <td>Germany</td>
-</tr>
-<tr>
-  <td>Centro comercial Moctezuma</td>
-  <td>Francisco Chang</td>
-  <td>Mexico</td>
-</tr>
-</table><table>
-<tr>
-  <th>Company</th>
-  <th>Contact</th>
-  <th>Country</th>
-</tr>
-<tr>
-  <td>Alfreds Futterkiste</td>
-  <td>Maria Anders</td>
-  <td>Germany</td>
-</tr>
-<tr>
-  <td>Centro comercial Moctezuma</td>
-  <td>Francisco Chang</td>
-  <td>Mexico</td>
-</tr>
-</table><table>
-<tr>
-  <th>Company</th>
-  <th>Contact</th>
-  <th>Country</th>
-</tr>
-<tr>
-  <td>Alfreds Futterkiste</td>
-  <td>Maria Anders</td>
-  <td>Germany</td>
-</tr>
-<tr>
-  <td>Centro comercial Moctezuma</td>
-  <td>Francisco Chang</td>
-  <td>Mexico</td>
-</tr>
-</table>
-        `,
+      //       template: `<section>
+      //             <h1>Noi dung trang chu</h1>
+      //             <h1>Noi dung trang chu</h1>
+      //             <h1>Noi dung trang chu</h1>
+      //             <h1>Noi dung trang chu</h1>
+      //             <h1>Noi dung trang chu</h1>
+      //         </section>
+      //         <table>
+      //   <tr>
+      //     <th>Company</th>
+      //     <th>Contact</th>
+      //     <th>Country</th>
+      //   </tr>
+      //   <tr>
+      //     <td>Alfreds Futterkiste</td>
+      //     <td>Maria Anders</td>
+      //     <td>Germany</td>
+      //   </tr>
+      //   <tr>
+      //     <td>Centro comercial Moctezuma</td>
+      //     <td>Francisco Chang</td>
+      //     <td>Mexico</td>
+      //   </tr>
+      // </table><table>
+      // <tr>
+      //   <th>Company</th>
+      //   <th>Contact</th>
+      //   <th>Country</th>
+      // </tr>
+      // <tr>
+      //   <td>Alfreds Futterkiste</td>
+      //   <td>Maria Anders</td>
+      //   <td>Germany</td>
+      // </tr>
+      // <tr>
+      //   <td>Centro comercial Moctezuma</td>
+      //   <td>Francisco Chang</td>
+      //   <td>Mexico</td>
+      // </tr>
+      // </table><table>
+      // <tr>
+      //   <th>Company</th>
+      //   <th>Contact</th>
+      //   <th>Country</th>
+      // </tr>
+      // <tr>
+      //   <td>Alfreds Futterkiste</td>
+      //   <td>Maria Anders</td>
+      //   <td>Germany</td>
+      // </tr>
+      // <tr>
+      //   <td>Centro comercial Moctezuma</td>
+      //   <td>Francisco Chang</td>
+      //   <td>Mexico</td>
+      // </tr>
+      // </table><table>
+      // <tr>
+      //   <th>Company</th>
+      //   <th>Contact</th>
+      //   <th>Country</th>
+      // </tr>
+      // <tr>
+      //   <td>Alfreds Futterkiste</td>
+      //   <td>Maria Anders</td>
+      //   <td>Germany</td>
+      // </tr>
+      // <tr>
+      //   <td>Centro comercial Moctezuma</td>
+      //   <td>Francisco Chang</td>
+      //   <td>Mexico</td>
+      // </tr>
+      // </table><table>
+      // <tr>
+      //   <th>Company</th>
+      //   <th>Contact</th>
+      //   <th>Country</th>
+      // </tr>
+      // <tr>
+      //   <td>Alfreds Futterkiste</td>
+      //   <td>Maria Anders</td>
+      //   <td>Germany</td>
+      // </tr>
+      // <tr>
+      //   <td>Centro comercial Moctezuma</td>
+      //   <td>Francisco Chang</td>
+      //   <td>Mexico</td>
+      // </tr>
+      // </table>
+      //         `,
+      templateUrl: "pages/trang-chu.html",
+      controller: ThucVatController,
     })
     .when("/contact", {
       // lam gi thi lam
       // noi dung cua trang chu
       //   template: "<h1>Noi dung trang contact</h1>",
       //Truyen file HTML
-      templateUrl: "pages/lien-he.html",
+      // template: "<h1>Noi dung trang cua hang</h1>",
     })
-    .when("/cua-hang", {
+    .when("/cua-hang/:name", {
       // lam gi thi lam
       // noi dung cua trang chu
-      template: "<h1>Noi dung trang cua hang</h1>",
+      templateUrl: "pages/lien-he.html",
+      controller: HienThi,
     })
     .otherwise({
       redirectTo: "/trang-chu",
