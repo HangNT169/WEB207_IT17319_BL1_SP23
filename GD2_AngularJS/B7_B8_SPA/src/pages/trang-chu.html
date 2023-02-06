@@ -17,3 +17,23 @@ Trang chu
     </tr>
   </tbody>
 </table>
+
+<p>DongVat</p>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Ten</th>
+      <th>Loai</th>
+      <th>Gioi tinh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="tv in listDongVat">
+      <td>{{tv.id}}</td>
+      <td>{{tv.ten}}</td>
+      <td>{{tv.loai}}</td>
+      <td>{{tv.gioiTinh}}</td>
+    </tr>
+  </tbody>
+</table>
