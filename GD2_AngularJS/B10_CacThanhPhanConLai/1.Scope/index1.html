@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-app="myApp">
+    <!-- 1.Khai niem scope
+        - la 1 bien dung de trao doi giua controller va view 
+        - scope : co gia tri ton tai trong 1 controller.
+        Ngoai controller => K goi dc toi bien scope 
+        - Mo hinh MVC:
+             + M(Model): thuoc tinh, phuong thuc 
+             + V(View): Chua giao dien file HTML 
+             + C(Controller): Chua logic - Chua cac ham js.
+        - Bien cuc bo 
+        2. RootScope 
+        - Bien toan cuc.
+        - Co the goi o moi noi (trong, ngoai controller deu duoc).
+        - Co the goi o trong controller khac 
+        => Chung ng-app
+     -->
+    <div ng-controller="myController">{{message}} {{mess1}}</div>
+    <p>Ngoai controller</p>
+    {{message}}
+    <br />
+    {{mess1}}
+
+    <script src="../../lib1/angular.js"></script>
+    <script src="index1.js"></script>
+  </body>
+</html>

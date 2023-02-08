@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT16304</title>
+  </head>
+  <body ng-app="demo_form">
+    <div class="container" ng-controller="form_controller">
+      <form name="form_user">
+        <div class="mt-2 row">
+          <label for="fullname" class="col-2">Họ tên</label>
+          <div class="col-10">
+            <input
+              type="text"
+              ng-model="fullname"
+              class="form-control"
+              name="fullname"
+              id="fullname"
+              required
+            />
+            <small ng-hide="form_user.fullname.$valid" class="text-danger"
+              >Không được để trống</small
+            >
+          </div>
+        </div>
+        <div class="mt-2 row">
+          <label for="password" class="col-2">Họ tên</label>
+          <div class="col-10">
+            <input
+              type="password"
+              ng-model="password"
+              class="form-control"
+              name="password"
+              id="password"
+              required
+            />
+            <small ng-hide="form_user.password.$valid" class="text-danger"
+              >Không được để trống</small
+            >
+          </div>
+        </div>
+
+        <button class="btn btn-primary col-2" ng-click="dangNhap();">
+          Đăng nhập
+        </button>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+      const app = angular.module("demo_form", []);
+      app.controller("form_controller", formController);
+
+      function formController($scope) {
+        let sv = {
+          fullname: "hang",
+          password: "123456",
+        };
+        $scope.dangNhap = function () {
+          console.log($scope.fullname);
+          console.log($scope.password);
+
+          if (
+            $scope.fullname == sv.fullname &&
+            $scope.password == sv.password
+          ) {
+            window.open("index.html");
+          } else {
+            alert("Login that bai");
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

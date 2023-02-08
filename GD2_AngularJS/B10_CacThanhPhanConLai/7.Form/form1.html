@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <style>
+    input.ng-invalid {
+      background-color: red;
+      /* // css cho the input loi */
+    }
+    form.ng-pristine {
+      background-color: yellow;
+      /* // css cho form loi */
+    }
+  </style> -->
+  <body ng-controller="myController">
+    <!-- 1. Ng-model -->
+    <!-- Sử dụng ng-model để ràng buộc dữ liệu với các input.
+    ng-model sẽ thực hiện ràng buộc 2 chiều (2 way binding):
+    Chiều thứ nhất: lấy dữ liệu bên trong $scope & hiển thị lên giao diện.
+    Chiều thứ hai: lấy dữ liệu người dùng nhập vào trên giao diện (input) & cập nhật vào trong $scope.
+    Nếu trong $scope chưa có thuộc tính thì sẽ tự động tạo mới thuộc tính đó. -->
+    <!-- <input type="text" ng-model="user.firstName" />
+    <input type="text" ng-model="user.lastName" /> -->
+    <!--2. ng-options -->
+    <select ng-model="u1" ng-options="x.firstName for x in users"></select>
+    {{u1}}
+    <!-- ng-option cung co the lap.
+          Su khac biet:
+            - ng-repeat: value cua moi option luon luon la text
+            - ng-options: co the la doi tuong hoac mang -->
+    <!-- <div>selected item is : {{selectedItem}}</div>
+    <select ng-model="selectedItem">
+      <option ng-repeat="user in users" value="{{user.firstName}}">
+        {{user.lastName}}
+      </option>
+    </select> -->
+    {{u}}
+    <select ng-model="u">
+      <option ng-repeat="x in users" value="{{x.firstName}}">
+        {{x.lastName}}
+      </option>
+    </select>
+    <!-- 3. Check box -->
+    <!-- <div>
+      <input type="checkbox" ng-model="all" /> Check all<br /><br />
+      <input type="checkbox" ng-checked="all" ng-model="1" />1<br />
+      <input type="checkbox" ng-checked="all" ng-model="2" />2<br />
+      <input type="checkbox" ng-checked="all" ng-model="3" />3
+    </div> -->
+
+    <!-- 4.Form -->
+    <form name="myForm">
+      <label>Full name</label>
+      <input type="text" name="txtName" ng-model="fullName" required />
+      <span ng-hide="myForm.txtName.$valid">Vui long nhap ten</span>
+      <br />
+      <label>Email name</label>
+      <input type="email" name="txtEmail" ng-model="email" required />
+      <span ng-hide="myForm.txtEmail.$valid">Vui long nhap email</span>
+      <br />
+    </form>
+    <!-- <h3>Tinh trang loi</h3>
+      <ul>
+        <li>Full name:{{myForm.txtName.$valid}}</li>
+        <li>Email name:{{myForm.txtEmail.$valid}}</li>
+      </ul>
+      <h3>Tinh trang loi: {{myForm.$valid}}</h3> -->
+    <!-- 5. Custom loi trong form -->
+    <form name="newForm">
+      <input
+        type="password"
+        ng-model="password"
+        name="password"
+        check-password
+        required
+      />
+      <div
+        ng-hide="newForm.password.$untouched || newForm.password.$valid"
+        class="text-danger"
+      >
+        <small ng-show="newForm.password.$error.required">
+          Không được để trống
+        </small>
+
+        <small ng-show="newForm.password.$error.check_length_pwd">
+          Tối thiểu 6 kí tự
+        </small>
+      </div>
+    </form>
+    <script src="../../lib1/angular-1.8.2/angular.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

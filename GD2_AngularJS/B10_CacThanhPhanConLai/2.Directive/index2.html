@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-app="myModule">
+    <!-- 1. Khai niem ve directive 
+         - La 1 tinh nang cua angular js
+         => Dung de mo rong giao dien HTML
+         - Cac loai directive : ng-tenDirective 
+         2. Mot so dang directive 
+         - Lien quan toi application : ng-app,ng-controller
+         - forms : ng-pattern,ng-minLength... => Validate form 
+         - template : ng-include, ng-view....
+         - operation (su kien): ng-click, ng-change...
+         - bingling (two way binding): ng-model 
+         3. Cac loai directive chinh thuong dung 
+         - ng-app: Khoi tao ung dung 
+         - ng-model: Khoi tao du lieu 2 chieu (two way binding)
+         - ng-init : Khoi tao du lieu cho ung dung(Giong scope trong controller)
+         4. Cac loai directive
+        - Cung cap san (angular JS)
+        - Tu custom nhung phai theo cu phap
+     -->
+    <div ng-controller="myController" ng-init="mess1='hello'">
+      {{mess}} {{mess1}}
+      <div welcome-text></div>
+    </div>
+    <script src="../../lib1/angular.js"></script>
+    <script>
+      var app = angular
+        .module("myModule", [])
+        .controller("myController", function ($scope) {
+          $scope.mess = "HIHI";
+        })
+        .directive("welcomeText", function () {
+          return {
+            template: "<h1>Welcome to Custom Directives</h1>",
+          };
+        });
+    </script>
+  </body>
+</html>

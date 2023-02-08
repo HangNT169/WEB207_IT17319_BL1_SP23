@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <style>
+    input.ng-invalid {
+      background-color: red;
+      /* // css cho the input loi */
+    }
+    form.ng-pristine {
+      background-color: yellow;
+      /* // css cho form loi */
+    }
+  </style> -->
+  <body>
+    <div ng-controller="myController">
+      <form>
+        First Name:<br />
+        <input type="text" ng-model="users.firstName" /><br />
+        Last Name:<br />
+        <input type="text" ng-model="users.lastName" />
+        <br /><br />
+        <!-- <div>
+          <input type="checkbox" ng-model="all" /> Check all<br /><br />
+          <input type="checkbox" ng-checked="all" ng-model="1" />1<br />
+          <input type="checkbox" ng-checked="all" ng-model="2" />2<br />
+          <input type="checkbox" ng-checked="all" ng-model="3" />3
+        </div> -->
+        <!-- <div>
+          <select ng-model="user">
+            <option ng-repeat="x in users" value="{{x.firstName}}">
+              {{x.firstName}}
+            </option>
+          </select>
+           ng-option cung co the lap.
+          Su khac biet:
+            - ng-repeat: value cua moi option luon luon la text
+            - ng-options: co the la doi tuong hoac mang
+          <select
+            ng-model="user"
+            ng-options="x.firstName for x in users"
+          ></select>
+        </div> -->
+      </form>
+      <form name="login">
+        <!-- Fullname:
+        <input type="text" ng-model="fullName" required name="txtFullName" />
+        <div ng-hide="login.txtFullName.$valid">Vui long nhap ten</div>
+        <br />
+        Email:
+        <input type="email" ng-model="email" required name="txtEmail" />
+        <div ng-hide="login.txtEmail.$valid">Vui long nhap email</div>
+        <br /> -->
+        <!-- Age
+        <input type="text" ng-model="age" name="txtAge" event-number />
+        <span ng-show="login.txtAge.$invalid">Vui long nhap so chan</span>
+        <br /> -->
+        <!-- <div>
+          Error: Fullname:{{login.txtFullName.$valid}}
+          Email:{{login.txtEmail.$valid}}
+        </div> -->
+        <!-- <h3 ng-show="login.$valid">Chuc mung thanh cong</h3> -->
+      </form>
+    </div>
+    <script src="../../lib1/angular-1.8.2/angular.js"></script>
+    <script src="app.js"></script>
+    <!-- <script>
+      var app = angular.module("myModule", []);
+      app.directive("eventNumber", function () {
+        return {
+          required: "ngModel",
+          link: function (scope, element, attr, mCtrl) {
+            function fnValidate(value) {
+              if (parseInt(value) % 2 == 0) {
+                mCtrl.$setValidity("charE", true);
+              } else {
+                mCtrl.$setValidity("charE", false);
+              }
+              return value;
+            }
+            mCtrl.$parsers.push(fnValidate);
+          },
+        };
+      });
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Hide, Show dung de an hien doi tuong html -->
+    <!-- ng-sưitch: tuong tu -->
+    <div ng-controller="myController">
+      <table>
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Gender</th>
+            <th>Sarary</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="employee in employees">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>
+              <!-- <span ng:show="employee.gender">Nam</span>
+              <span ng:hide="employee.gender">Nu</span> -->
+              <!-- <span ng-switch="employee.gender">
+                <span ng-switch-when="true">Nam</span>
+                <span ng-switch-default>Nu</span>
+              </span> -->
+              <span ng-if="employee.gender == true">Nam</span>
+              <span ng-if="employee.gender == false">Nu</span>
+            </td>
+            <td>{{employee.salary}}</td>
+            <td>
+              <button ng-click="increaseLike(employee);">+</button>
+              <button ng-click="increaseDislike(employee);">-</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="../../lib1/angular-1.8.2/angular.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

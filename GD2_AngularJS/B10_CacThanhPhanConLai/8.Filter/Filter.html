@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <!-- 
+        1. Filter la gì
+        -  mo slide: curency, date, filter, json, limitTo, lơercase, number,ỏderBy, uppercase
+        2. Cac filter co san
+        - chi can them filter vao bieu thuc {{myString |filter}
+        - vd: {{lastName |uppercase}
+        3. Filter tu dinh nghia
+        - Tu dinh nghia nhu directive, service
+       -->
+      <table>
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Gender</th>
+            <th>Sarary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="employee in employees">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.gender}}</td>
+            <td>{{employee.salary}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
