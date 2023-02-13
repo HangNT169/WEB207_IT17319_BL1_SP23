@@ -1,0 +1,61 @@
+Trang chu
+
+<form>
+  Ten: <input type="text" ng-model="form_sinhVien.ten" />
+  <br />
+  Loai: <input type="text" ng-model="form_sinhVien.loai" />
+  <br />
+  Gioi tinh:
+  <input
+    type="radio"
+    name="gender"
+    value="true"
+    ng-model="form_sinhVien.gioiTinh"
+    ng-checked="form_sinhVien.gioiTinh == true"
+  />
+  Nam
+  <input
+    type="radio"
+    name="gender"
+    value="false"
+    ng-model="form_sinhVien.gioiTinh"
+    ng-checked="form_sinhVien.gioiTinh == false"
+  />
+  Nữ
+  <br />
+  <button>Add</button>
+  <button>Update</button>
+</form>
+<table>
+  <thead>
+    <tr>
+      <th>STT</th>
+      <th>ID</th>
+      <th>Ten</th>
+      <th>Loai</th>
+      <th>Gioi tinh</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="tv in danhSachThucVatHienThi">
+      <td>{{$index+1}}</td>
+      <td>{{tv.id}}</td>
+      <td>{{tv.ten}}</td>
+      <td>{{tv.loai}}</td>
+      <td>{{tv.gioiTinh}}</td>
+      <td>
+        <a
+          href="#thuc-vat/detail/{{tv.id}}"
+          ng-click="detailStudent($event,$index)"
+          >Detail</a
+        >
+        <a
+          href="#thuc-vat/remove/{{tv.id}}"
+          ng-click="removeStudent($event,$index)"
+          >Remove</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>

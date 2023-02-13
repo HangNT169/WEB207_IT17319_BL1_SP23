@@ -1,0 +1,530 @@
+{
+  "thucVat": [
+    {
+      "ten": "ten 4",
+      "loai": "loai 4",
+      "gioiTinh": false,
+      "id": "ms4"
+    },
+    {
+      "ten": "ten 5",
+      "loai": "loai 5",
+      "gioiTinh": true,
+      "id": "ms5"
+    },
+    {
+      "ten": "ten 6",
+      "loai": "loai 6",
+      "gioiTinh": true,
+      "id": "6"
+    },
+    {
+      "ten": "ten 7",
+      "loai": "loai 7",
+      "gioiTinh": true,
+      "id": "7"
+    },
+    {
+      "ten": "ten 8",
+      "loai": "loai 8",
+      "gioiTinh": true,
+      "id": "8"
+    },
+    {
+      "ten": "ten 9",
+      "loai": "loai 9",
+      "gioiTinh": false,
+      "id": "9"
+    },
+    {
+      "ten": "ten 10",
+      "loai": "loai 10",
+      "gioiTinh": false,
+      "id": "10"
+    },
+    {
+      "ten": "ten 11",
+      "loai": "loai 11",
+      "gioiTinh": false,
+      "id": "11"
+    },
+    {
+      "ten": "ten 12",
+      "loai": "loai 12",
+      "gioiTinh": false,
+      "id": "12"
+    },
+    {
+      "ten": "ten 13",
+      "loai": "loai 13",
+      "gioiTinh": false,
+      "id": "13"
+    },
+    {
+      "ten": "ten 14",
+      "loai": "loai 14",
+      "gioiTinh": false,
+      "id": "14"
+    },
+    {
+      "ten": "ten 15",
+      "loai": "loai 15",
+      "gioiTinh": false,
+      "id": "15"
+    },
+    {
+      "ten": "ten 16",
+      "loai": "loai 16",
+      "gioiTinh": false,
+      "id": "16"
+    },
+    {
+      "ten": "ten 17",
+      "loai": "loai 17",
+      "gioiTinh": false,
+      "id": "17"
+    },
+    {
+      "ten": "ten 18",
+      "loai": "loai 18",
+      "gioiTinh": false,
+      "id": "18"
+    },
+    {
+      "ten": "ten 19",
+      "loai": "loai 19",
+      "gioiTinh": false,
+      "id": "19"
+    },
+    {
+      "ten": "ten 20",
+      "loai": "loai 20",
+      "gioiTinh": false,
+      "id": "20"
+    },
+    {
+      "ten": "ten 21",
+      "loai": "loai 21",
+      "gioiTinh": false,
+      "id": "21"
+    },
+    {
+      "ten": "ten 22",
+      "loai": "loai 22",
+      "gioiTinh": false,
+      "id": "22"
+    },
+    {
+      "ten": "ten 23",
+      "loai": "loai 23",
+      "gioiTinh": false,
+      "id": "23"
+    },
+    {
+      "ten": "ten 24",
+      "loai": "loai 24",
+      "gioiTinh": false,
+      "id": "24"
+    },
+    {
+      "ten": "ten 25",
+      "loai": "loai 25",
+      "gioiTinh": false,
+      "id": "25"
+    },
+    {
+      "ten": "ten 26",
+      "loai": "loai 26",
+      "gioiTinh": false,
+      "id": "26"
+    },
+    {
+      "ten": "ten 27",
+      "loai": "loai 27",
+      "gioiTinh": false,
+      "id": "27"
+    },
+    {
+      "ten": "ten 28",
+      "loai": "loai 28",
+      "gioiTinh": false,
+      "id": "28"
+    },
+    {
+      "ten": "ten 29",
+      "loai": "loai 29",
+      "gioiTinh": false,
+      "id": "29"
+    },
+    {
+      "ten": "ten 30",
+      "loai": "loai 30",
+      "gioiTinh": false,
+      "id": "30"
+    }
+  ],
+  "dongVat": [
+    {
+      "ten": "ten 1",
+      "loai": "loai 1",
+      "gioiTinh": false,
+      "id": "1"
+    },
+    {
+      "ten": "ten 2",
+      "loai": "loai 2",
+      "gioiTinh": false,
+      "id": "2"
+    },
+    {
+      "ten": "ten 3",
+      "loai": "loai 3",
+      "gioiTinh": false,
+      "id": "3"
+    },
+    {
+      "ten": "ten 4",
+      "loai": "loai 4",
+      "gioiTinh": false,
+      "id": "4"
+    },
+    {
+      "ten": "ten 5",
+      "loai": "loai 5",
+      "gioiTinh": false,
+      "id": "5"
+    },
+    {
+      "ten": "ten 6",
+      "loai": "loai 6",
+      "gioiTinh": false,
+      "id": "6"
+    },
+    {
+      "ten": "ten 7",
+      "loai": "loai 7",
+      "gioiTinh": false,
+      "id": "7"
+    },
+    {
+      "ten": "ten 8",
+      "loai": "loai 8",
+      "gioiTinh": false,
+      "id": "8"
+    },
+    {
+      "ten": "ten 9",
+      "loai": "loai 9",
+      "gioiTinh": false,
+      "id": "9"
+    },
+    {
+      "ten": "ten 10",
+      "loai": "loai 10",
+      "gioiTinh": false,
+      "id": "10"
+    },
+    {
+      "ten": "ten 11",
+      "loai": "loai 11",
+      "gioiTinh": false,
+      "id": "11"
+    },
+    {
+      "ten": "ten 12",
+      "loai": "loai 12",
+      "gioiTinh": false,
+      "id": "12"
+    },
+    {
+      "ten": "ten 13",
+      "loai": "loai 13",
+      "gioiTinh": false,
+      "id": "13"
+    },
+    {
+      "ten": "ten 14",
+      "loai": "loai 14",
+      "gioiTinh": false,
+      "id": "14"
+    },
+    {
+      "ten": "ten 15",
+      "loai": "loai 15",
+      "gioiTinh": false,
+      "id": "15"
+    },
+    {
+      "ten": "ten 16",
+      "loai": "loai 16",
+      "gioiTinh": false,
+      "id": "16"
+    },
+    {
+      "ten": "ten 17",
+      "loai": "loai 17",
+      "gioiTinh": false,
+      "id": "17"
+    },
+    {
+      "ten": "ten 18",
+      "loai": "loai 18",
+      "gioiTinh": false,
+      "id": "18"
+    },
+    {
+      "ten": "ten 19",
+      "loai": "loai 19",
+      "gioiTinh": false,
+      "id": "19"
+    },
+    {
+      "ten": "ten 20",
+      "loai": "loai 20",
+      "gioiTinh": false,
+      "id": "20"
+    },
+    {
+      "ten": "ten 21",
+      "loai": "loai 21",
+      "gioiTinh": false,
+      "id": "21"
+    },
+    {
+      "ten": "ten 22",
+      "loai": "loai 22",
+      "gioiTinh": false,
+      "id": "22"
+    },
+    {
+      "ten": "ten 23",
+      "loai": "loai 23",
+      "gioiTinh": false,
+      "id": "23"
+    },
+    {
+      "ten": "ten 24",
+      "loai": "loai 24",
+      "gioiTinh": false,
+      "id": "24"
+    },
+    {
+      "ten": "ten 25",
+      "loai": "loai 25",
+      "gioiTinh": false,
+      "id": "25"
+    },
+    {
+      "ten": "ten 26",
+      "loai": "loai 26",
+      "gioiTinh": false,
+      "id": "26"
+    },
+    {
+      "ten": "ten 27",
+      "loai": "loai 27",
+      "gioiTinh": false,
+      "id": "27"
+    },
+    {
+      "ten": "ten 28",
+      "loai": "loai 28",
+      "gioiTinh": false,
+      "id": "28"
+    },
+    {
+      "ten": "ten 29",
+      "loai": "loai 29",
+      "gioiTinh": false,
+      "id": "29"
+    },
+    {
+      "ten": "ten 30",
+      "loai": "loai 30",
+      "gioiTinh": false,
+      "id": "30"
+    }
+  ],
+  "sinhVien": [
+    {
+      "ten": "ten 1",
+      "loai": "loai 1",
+      "gioiTinh": false,
+      "id": "1"
+    },
+    {
+      "ten": "ten 2",
+      "loai": "loai 2",
+      "gioiTinh": false,
+      "id": "2"
+    },
+    {
+      "ten": "ten 3",
+      "loai": "loai 3",
+      "gioiTinh": false,
+      "id": "3"
+    },
+    {
+      "ten": "ten 4",
+      "loai": "loai 4",
+      "gioiTinh": false,
+      "id": "4"
+    },
+    {
+      "ten": "ten 5",
+      "loai": "loai 5",
+      "gioiTinh": false,
+      "id": "5"
+    },
+    {
+      "ten": "ten 6",
+      "loai": "loai 6",
+      "gioiTinh": false,
+      "id": "6"
+    },
+    {
+      "ten": "ten 7",
+      "loai": "loai 7",
+      "gioiTinh": false,
+      "id": "7"
+    },
+    {
+      "ten": "ten 8",
+      "loai": "loai 8",
+      "gioiTinh": false,
+      "id": "8"
+    },
+    {
+      "ten": "ten 9",
+      "loai": "loai 9",
+      "gioiTinh": false,
+      "id": "9"
+    },
+    {
+      "ten": "ten 10",
+      "loai": "loai 10",
+      "gioiTinh": false,
+      "id": "10"
+    },
+    {
+      "ten": "ten 11",
+      "loai": "loai 11",
+      "gioiTinh": false,
+      "id": "11"
+    },
+    {
+      "ten": "ten 12",
+      "loai": "loai 12",
+      "gioiTinh": false,
+      "id": "12"
+    },
+    {
+      "ten": "ten 13",
+      "loai": "loai 13",
+      "gioiTinh": false,
+      "id": "13"
+    },
+    {
+      "ten": "ten 14",
+      "loai": "loai 14",
+      "gioiTinh": false,
+      "id": "14"
+    },
+    {
+      "ten": "ten 15",
+      "loai": "loai 15",
+      "gioiTinh": false,
+      "id": "15"
+    },
+    {
+      "ten": "ten 16",
+      "loai": "loai 16",
+      "gioiTinh": false,
+      "id": "16"
+    },
+    {
+      "ten": "ten 17",
+      "loai": "loai 17",
+      "gioiTinh": false,
+      "id": "17"
+    },
+    {
+      "ten": "ten 18",
+      "loai": "loai 18",
+      "gioiTinh": false,
+      "id": "18"
+    },
+    {
+      "ten": "ten 19",
+      "loai": "loai 19",
+      "gioiTinh": false,
+      "id": "19"
+    },
+    {
+      "ten": "ten 20",
+      "loai": "loai 20",
+      "gioiTinh": false,
+      "id": "20"
+    },
+    {
+      "ten": "ten 21",
+      "loai": "loai 21",
+      "gioiTinh": false,
+      "id": "21"
+    },
+    {
+      "ten": "ten 22",
+      "loai": "loai 22",
+      "gioiTinh": false,
+      "id": "22"
+    },
+    {
+      "ten": "ten 23",
+      "loai": "loai 23",
+      "gioiTinh": false,
+      "id": "23"
+    },
+    {
+      "ten": "ten 24",
+      "loai": "loai 24",
+      "gioiTinh": false,
+      "id": "24"
+    },
+    {
+      "ten": "ten 25",
+      "loai": "loai 25",
+      "gioiTinh": false,
+      "id": "25"
+    },
+    {
+      "ten": "ten 26",
+      "loai": "loai 26",
+      "gioiTinh": false,
+      "id": "26"
+    },
+    {
+      "ten": "ten 27",
+      "loai": "loai 27",
+      "gioiTinh": false,
+      "id": "27"
+    },
+    {
+      "ten": "ten 28",
+      "loai": "loai 28",
+      "gioiTinh": false,
+      "id": "28"
+    },
+    {
+      "ten": "ten 29",
+      "loai": "loai 29",
+      "gioiTinh": false,
+      "id": "29"
+    },
+    {
+      "ten": "ten 30",
+      "loai": "loai 30",
+      "gioiTinh": false,
+      "id": "30"
+    }
+  ]
+}
