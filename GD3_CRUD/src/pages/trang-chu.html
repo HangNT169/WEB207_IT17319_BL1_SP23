@@ -1,30 +1,27 @@
 Trang chu
-
 <form>
-  Ten: <input type="text" ng-model="form_sinhVien.ten" />
+  Ten: <input type="text" ng-model="form_thucVat.ten" />
   <br />
-  Loai: <input type="text" ng-model="form_sinhVien.loai" />
+  Loai: <input type="text" ng-model="form_thucVat.loai" />
   <br />
   Gioi tinh:
   <input
     type="radio"
     name="gender"
     value="true"
-    ng-model="form_sinhVien.gioiTinh"
-    ng-checked="form_sinhVien.gioiTinh == true"
-  />
-  Nam
+    ng-model="form_thucVat.gioiTinh"
+    ng-checked="form_thucVat.gioiTinh == true"
+  />Nam
   <input
     type="radio"
     name="gender"
     value="false"
-    ng-model="form_sinhVien.gioiTinh"
-    ng-checked="form_sinhVien.gioiTinh == false"
-  />
-  Nữ
+    ng-model="form_thucVat.gioiTinh"
+    ng-checked="form_thucVat.gioiTinh == false"
+  />Nu
   <br />
-  <button>Add</button>
-  <button>Update</button>
+  <button ng-click="addThucVat($event);">Add</button>
+  <button ng-click="updateThucVat($event);">Update</button>
 </form>
 <table>
   <thead>
@@ -38,7 +35,7 @@ Trang chu
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="tv in danhSachThucVatHienThi">
+    <tr ng-repeat="tv in listThucVat">
       <td>{{$index+1}}</td>
       <td>{{tv.id}}</td>
       <td>{{tv.ten}}</td>
@@ -47,12 +44,12 @@ Trang chu
       <td>
         <a
           href="#thuc-vat/detail/{{tv.id}}"
-          ng-click="detailStudent($event,$index)"
+          ng-click="detailThucVat($event,$index);"
           >Detail</a
         >
         <a
           href="#thuc-vat/remove/{{tv.id}}"
-          ng-click="removeStudent($event,$index)"
+          ng-click="removeThucVat($event,$index);"
           >Remove</a
         >
       </td>
